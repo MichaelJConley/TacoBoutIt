@@ -1,3 +1,16 @@
-h1{
-    color: #DAD790
+.Header {
+    color: #ffcc66;
+    font-family: cursive;
+    text-align: center;
+}
+
+#Intro {
+    padding-right: 300px;
+}
+
+#Title em {
+    font-style: normal;
+    color: orangered;
+    font-weight: bolder;
+    font-family: sans-serif
 }
