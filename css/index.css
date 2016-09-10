@@ -14,3 +14,8 @@
     font-weight: bolder;
     font-family: sans-serif
 }
+
+#ingredients{
+    text-align: center;
+    overflow-y: auto;
+}
