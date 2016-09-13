@@ -22,55 +22,42 @@
     </head>
     
     <body>
-        <div class="container-fluid">
-            <div class="jumbotron">
-                <h1>TacoBoutIt</h1>
-                <p>List the food you have, and we'll come up with a recipe!</p>
+        <div class="jumbotron" id="jumbotron">
+            <div class="container">
+            
+                <h1 id="title">TacoBoutIt</h1>
+                <p id="instructions">List the food you have, and we'll come up with a recipe!</p>
             </div>
         </div>
         
-        <div class="container-fluid">
+        <div class="container">
             <div class="row">
+                
+                <!-- Add Ingredients -->
                 <div class="col-sm-8">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h2>Add food to your pantry</h2>
+                    <h2>Add food to your pantry</h2>
+                    <form>
+                        <div class="form-inline">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="input" placeholder="I have...">
+                                <button type="button" class="btn btn-default" onclick="addToList()">
+                                    <span class="glyphicon glyphicon-plus"></span>  Add
+                                </button>
+                            </div>
                         </div>
-                        <div class="panel-body">
-                            <form>
-                                <div class="form-inline">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" id="input" placeholder="I have...">
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                        <div class="panel-footer">
-                            <button type="button" class="btn btn-default" onclick="addToList()">
-                                <span class="glyphicon glyphicon-plus"></span>  Add
-                            </button>
-                        </div>
-                    </div>
+                    </form>
                 </div>
+                
+                <!-- Pantry -->
                 <div class="col-sm-4">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h2>Your Pantry</h2>
-                        </div>
-                        <div class="panel-body">
-                            <p id="list"></p>
-                        </div>
-                        <div class="panel-footer">
-                            <button type="button" class="btn btn-default" onclick="findRecipe()">
-                                Find Recipe
-                            </button>
-                            <button type="button" class="btn btn-default" onclick="clearPantry()">
-                                Clear Pantry
-                            </button>
-                        </div>
-                    </div>
+                    <h2>Your Pantry</h2>
+                    <p id="list"></p>
+                    <button type="button" class="btn btn-default" onclick="findRecipe()">Find Recipe</button>
+                    <button type="button" class="btn btn-default" onclick="clearPantry()">Clear Pantry</button>
                 </div>
+                
             </div>
         </div>
+        
     </body>
 </html>

@@ -14,9 +14,11 @@ function displayPantry() {
 
 function addToList() {
     var newFood = document.getElementById("input").value;
-    food.push(newFood);
-    document.getElementById("input").value = "";
-    displayPantry();
+    if (newFood !== "") {
+        food.push(newFood);
+        document.getElementById("input").value = "";
+        displayPantry();
+    }
 }
 
 function clearPantry() {
