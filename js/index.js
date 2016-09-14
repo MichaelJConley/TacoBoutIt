@@ -2,6 +2,7 @@
 var food = [];
 
 function displayPantry() {
+    "use strict";
     var text = "", i;
     for (i = 0; i < food.length; i++) {
         text += food[i];
@@ -13,6 +14,7 @@ function displayPantry() {
 }
 
 function addToList() {
+    "use strict";
     var newFood = document.getElementById("input").value;
     if (newFood !== "") {
         food.push(newFood);
@@ -22,10 +24,12 @@ function addToList() {
 }
 
 function clearPantry() {
+    "use strict";
     food = [];
     displayPantry();
 }
 
 function findRecipe() {
+    "use strict";
     alert("There are no recipes that match your ingredients!");
 }
